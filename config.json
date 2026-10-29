@@ -1,0 +1,38 @@
+{
+  "camera_setup": {
+    "fx_plugin_name": "DJIReframe",
+    "fx_plugin_fallback": "Transform",
+    "yaw_angle_a": -45.0,
+    "yaw_angle_b": 45.0,
+    "default_pitch": 0.0,
+    "default_fov": 90.0,
+    "court_center_yaw": 180.0,
+    "court_center_pitch": 20.0
+  },
+  "algorithm_tuning": {
+    "deadzone_min": 0.45,
+    "deadzone_max": 0.55,
+    "min_hold_frames": 15,
+    "shuttle_confidence_threshold": 0.60,
+    "lost_tolerance_frames": 10
+  },
+  "projection": {
+    "gnomonic_fov_deg": 80.0,
+    "gnomonic_out_width": 1280,
+    "gnomonic_out_height": 720
+  },
+  "tracknet": {
+    "model_path": "models/TrackNet_best.pt",
+    "inpaintnet_path": "models/InpaintNet_best.pt",
+    "input_width": 512,
+    "input_height": 288,
+    "use_inpaintnet": true
+  },
+  "execution_options": {
+    "apply_step_keyframes": true,
+    "debug_mode": false,
+    "phase1_dummy_mode": false,
+    "phase1_dummy_switches": [100, 250, 400, 600, 800],
+    "output_csv_path": "output/shuttle_coords.csv"
+  }
+}

@@ -1,0 +1,26 @@
+# Python virtual environment & caches
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Model weights (large binary files)
+models/*.pt
+models/*.pth
+
+# Test data & output artifacts
+testデータ/
+output/
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# External cloned repository
+TrackNetV3/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
